@@ -29,7 +29,9 @@ app = Flask('')
 
 @app.route('/')
 def home():
-    return "Blink OP Hi Kede"
+    return "WIZARD'S HOSTING BOT IS NOW RUNNING......................."
+   
+ 
 
 def run_flask():
   # Make sure to run on port provided by environment or default to 8080
