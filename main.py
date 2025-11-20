@@ -90,16 +90,16 @@ logger = logging.getLogger(__name__)
 # --- Command Button Layouts (ReplyKeyboardMarkup) ---
 COMMAND_BUTTONS_LAYOUT_USER_SPEC = [
     ["👀 Updates Channel"],
-    ["🪨 Upload File", "💎 Check Files"],
-    ["🏂 Bot Speed", "📊 Statistics"], # Statistics button kept for users, logic will restrict if not admin
+    ["📁 Upload File", "💎 Check Files"],
+    ["⚡ Bot Speed", "📊 Statistics"], # Statistics button kept for users, logic will restrict if not admin
     ["🗿 Contact Owner"]
 ]
 ADMIN_COMMAND_BUTTONS_LAYOUT_USER_SPEC = [
     ["👀 Updates Channel"],
-    ["🪨 Upload File", "💎 Check Files"],
-    ["🏂 Bot Speed", "📊 Statistics"],
-    ["💤 Subscriptions", "☔ Broadcast"],
-    ["😎 Lock Bot", "💤 Running All Code"], # Changed "Free Mode" to "Running All Code"
+    ["📁 Upload File", "💎 Check Files"],
+    ["⚡ Bot Speed", "📊 Statistics"],
+    ["🎁 Subscriptions", "📡 Broadcast"],
+    ["🔒 Lock Bot", "💤 Running All Code"], # Changed "Free Mode" to "Running All Code"
     ["👀 Admin Panel", "🗿 Contact Owner"]
 ]
 
@@ -1278,14 +1278,14 @@ def command_show_status(message): _logic_statistics(message) # Changed to call _
 
 BUTTON_TEXT_TO_LOGIC = {
     "👀 Updates Channel": _logic_updates_channel,
-    "🪨 Upload File": _logic_upload_file,
+    "📁 Upload File": _logic_upload_file,
     "💎 Check Files": _logic_check_files,
-    "🏂 Bot Speed": _logic_bot_speed,
+    "⚡ Bot Speed": _logic_bot_speed,
     "🗿 Contact Owner": _logic_contact_owner,
     "📊 Statistics": _logic_statistics, 
     "💤 Subscriptions": _logic_subscriptions_panel,
     "☔ Broadcast": _logic_broadcast_init,
-    "😎 Lock Bot": _logic_toggle_lock_bot, 
+    "🔒 Lock Bot": _logic_toggle_lock_bot, 
     # "💰 Free Mode": _logic_toggle_free_mode, # Removed
     "💤 Running All Code": _logic_run_all_scripts, # Added
     "👀 Admin Panel": _logic_admin_panel,
