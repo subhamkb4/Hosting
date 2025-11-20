@@ -46,7 +46,7 @@ def keep_alive():
 # --- End Flask Keep Alive ---
 
 # --- Configuration ---
-TOKEN = '8395068608:AAELa8UVejO-Ouzi0zlzg1BqRvvZjuNVm9w' # Replace with your actual token
+TOKEN = '8212101842:AAFHAKZ_39Cn5o1yc22GQmh_nyAL8HTgbKw' # Replace with your actual token
 OWNER_ID = '7896890222'# Replace with your Owner ID
 ADMIN_ID = '7896890222' # Replace with your Admin ID (can be same as Owner)
 YOUR_USERNAME = '@BLAZE_X_007' # Replace with your Telegram username (without the @)
@@ -91,14 +91,14 @@ logger = logging.getLogger(__name__)
 COMMAND_BUTTONS_LAYOUT_USER_SPEC = [
     ["👀 Updates Channel"],
     ["📁 Upload File", "💎 Check Files"],
-    ["⚡ Bot Speed", "📊 Statistics"], # Statistics button kept for users, logic will restrict if not admin
+    ["🏂 Bot Speed", "📊 Statistics"], # Statistics button kept for users, logic will restrict if not admin
     ["🗿 Contact Owner"]
 ]
 ADMIN_COMMAND_BUTTONS_LAYOUT_USER_SPEC = [
     ["👀 Updates Channel"],
     ["📁 Upload File", "💎 Check Files"],
-    ["⚡ Bot Speed", "📊 Statistics"],
-    ["🎁 Subscriptions", "📡 Broadcast"],
+    ["🏂 Bot Speed", "📊 Statistics"],
+    ["💤 Subscriptions", "☔ Broadcast"],
     ["🔒 Lock Bot", "💤 Running All Code"], # Changed "Free Mode" to "Running All Code"
     ["👀 Admin Panel", "🗿 Contact Owner"]
 ]
@@ -1280,12 +1280,12 @@ BUTTON_TEXT_TO_LOGIC = {
     "👀 Updates Channel": _logic_updates_channel,
     "📁 Upload File": _logic_upload_file,
     "💎 Check Files": _logic_check_files,
-    "⚡ Bot Speed": _logic_bot_speed,
+    "🏂 Bot Speed": _logic_bot_speed,
     "🗿 Contact Owner": _logic_contact_owner,
     "📊 Statistics": _logic_statistics, 
     "💤 Subscriptions": _logic_subscriptions_panel,
     "☔ Broadcast": _logic_broadcast_init,
-    "🔒 Lock Bot": _logic_toggle_lock_bot, 
+    "😎 Lock Bot": _logic_toggle_lock_bot, 
     # "💰 Free Mode": _logic_toggle_free_mode, # Removed
     "💤 Running All Code": _logic_run_all_scripts, # Added
     "👀 Admin Panel": _logic_admin_panel,
